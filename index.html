@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="script.js"></script>
+<script>
+    electriclamp1=new ElectricLamp()
+    switchButton1=new SwitchButton()
+    switchButton1.ConnectToLamp(electriclamp1)
+    for (i=1;i<=10;i++) {
+        switchButton1.switchon();
+        document.write(electriclamp1.status);
+        switchButton1.switchOff();
+        document.write("<br>")
+        document.write(electriclamp1.status);
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>
